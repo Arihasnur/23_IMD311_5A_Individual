@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>My About Me</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<body>
+<h1>About Me</h1>
+
+<a href="index.html">Home</a>
+<a href="biodata.html">About Me</a>
+<a href="education.html">My Education</a>
+<a href="experience.html">My Experience</a>
+<a href="hobby.html">My Hobby</a>
+<a href="contact.html">My Contact</a>
+
+
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+
+<div align="center" style="padding-top: 70px;">
+  
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/biodata 1.jpg" style="width: 25%;" border="3px solid black">
+        <div class="text"></div>
+      </div>
+      
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/biodata 2.jpg " style="width: 25%;"  border="3px solid black">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/sahira.jpg.jpeg" style="width:25%"  border="3px solid black">
+          <div class="text"></div>
+      </div>
+    
+      
+    
+      <div align= "center" style="padding-top: 25px;">
+
+          <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          
+          </div>
+      </div>
+      <br>
+
+      <div width="45px">
+        
+      
+      <div style="text-align: center;">
+      <P> 
+        Hai Sir,<br>
+        I would like to thank you, for giving me an oppurtunity to introduce myself.
+        My name is Nur Sahira Bt Sofi,<br>
+        I am 21 years old, I am from Pasir Puteh, Kelantan.
+        My favorite color is white. <br>
+        For your information, I am a final student of information management diploma at UiTM Machang Kelantan.<br> 
+        By the way I would like to continue my study in Bachelor of Information Science (Hons) Information Content Management.
+    </P>
+    </div>
+    
+</body>
+</html>
+
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() 
+    {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) 
+        {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) 
+        {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+  
+    
+
